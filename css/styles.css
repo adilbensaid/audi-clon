@@ -1,0 +1,468 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::-moz-selection {
+  background-color: #f50537;
+}
+
+*::selection {
+  background-color: #f50537;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+label.logo {
+  color: black;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+label.logo svg {
+  width: auto;
+}
+
+nav {
+  height: 72px;
+  width: 100%;
+}
+nav ul {
+  position: fixed;
+  float: right;
+  width: 100%;
+  height: 100vh;
+  top: -100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #fff;
+  z-index: 1999;
+}
+nav ul li {
+  display: block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #666666;
+  list-style: none;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 20px;
+  color: black;
+  float: left;
+  line-height: 80px;
+  margin-left: 40px;
+  cursor: pointer;
+  display: block;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ ul {
+  top: 80px;
+}
+
+.banner {
+  width: 100%;
+  height: 90vh;
+  background: url("https://www.audi.es/content/dam/nemo/es/home/Destacados/2022/header-audi-a6-avant-e-tron-concept-g22-1920x1920-desktop.jpg?downsize=768px:*") center center/cover no-repeat;
+}
+.banner h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  padding: 50px 0 0 50px;
+}
+.banner p {
+  color: white;
+  font-weight: 400;
+  padding: 24px 50px;
+}
+.banner button {
+  padding: 16px 24px;
+  background-color: white;
+  border: 1px solid #fff;
+  margin: 0 50px;
+}
+
+.hibrido {
+  width: 100vw;
+  height: 215vh;
+  overflow-x: hidden;
+  background: url("https://www.audi.es/content/dam/nemo/es/home/Secundarios/2022/M-2878x3500-destacado-home-parallax-module-audi-q4-e-tron-electromovilidad.jpg") center center/cover no-repeat;
+}
+.hibrido__info {
+  background-color: #fff;
+  width: 50%;
+  height: auto;
+  padding: 2em;
+  position: relative;
+  top: 10%;
+  left: 5%;
+}
+.hibrido__info h4 {
+  color: #3a3a3a;
+  font-size: 40px;
+  font-weight: 200;
+}
+.hibrido__info p {
+  font-size: 16px;
+  font-weight: 100;
+  padding: 15px 0;
+}
+.hibrido__info button {
+  margin: 0 4px 4px 0;
+  padding: 16px 32px;
+}
+
+.btn__white {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.btn__black {
+  color: #fff;
+  border: 1px solid #0000;
+  background-color: #000;
+}
+
+.promo {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  margin-top: 50px;
+}
+.promo h4 {
+  font-size: 40px;
+  margin: 24px 0 60px;
+}
+.promo__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px 40px;
+  width: 550px;
+}
+.promo__text h4 {
+  font-weight: 45px;
+}
+.promo__text p {
+  font-weight: 20px;
+  margin-bottom: 50px;
+}
+.promo__text button {
+  padding: 16px 30px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 0 50px;
+}
+.promo__img {
+  width: 100%;
+  height: auto;
+}
+
+.elect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25vh 0;
+}
+.elect__img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.elect img {
+  width: 80%;
+  height: auto;
+}
+.elect__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.elect__text h4 {
+  font-size: 45px;
+  padding: 20px 0;
+}
+.elect__text p {
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+.elect button {
+  margin: 0 4px 4px 0;
+  padding: 16px 32px;
+}
+.elect__black {
+  color: #fff;
+  border: 1px solid #0000;
+  background-color: #000;
+}
+.elect__white {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.potencia {
+  width: 100%;
+  height: 100vh;
+  background: url("https://www.audi.es/content/dam/nemo/es/home/Destacados/2022/header-audi-e-tron-gt-stella-mccartney-1920x1920-desktop.png?downsize=1440px:*") center center/cover no-repeat;
+}
+.potencia h3 {
+  font-size: 40px;
+  font-weight: 100;
+  color: #fff;
+  padding: 40px 40px 20px;
+}
+.potencia p {
+  color: #fff;
+  padding: 0 40px 20px;
+}
+.potencia__btn {
+  padding: 0 40px 20px;
+}
+.potencia__btn button {
+  margin: 0 4px 4px 0;
+  padding: 16px 32px;
+}
+.potencia__transp {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #0000;
+}
+.potencia__white {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.noticias {
+  padding: 40px;
+}
+.noticias h3 {
+  font-size: 35px;
+  padding: 20px 0;
+}
+
+.articulos {
+  height: 115vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+.articulos .articulo {
+  height: auto;
+}
+.articulos .articulo img {
+  width: 100%;
+  height: auto;
+}
+.articulos .articulo p {
+  margin-bottom: 10px;
+}
+.articulos .articulo a {
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px;
+}
+.articulos .articulo a:hover {
+  color: #666666;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.links {
+  width: 100vw;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #000;
+}
+.links__mod {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.links__mod a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+.links__prin a {
+  font-size: 17px;
+}
+
+.footer__texto {
+  background-color: #000;
+  padding: 0 50px;
+}
+.footer__texto a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 0 0 0 20px;
+}
+.footer__texto p {
+  font-size: 12px;
+  color: #fff;
+  padding: 30px 0;
+}
+
+@media (max-width: 400px) {
+  .hibrido {
+    width: 100vw;
+    height: 125vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hibrido__info {
+    width: 70%;
+    top: 0;
+    left: 0;
+  }
+
+  .promo {
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .promo__text {
+    width: inherit;
+    padding: 0 2px 20px;
+  }
+  .promo__text p {
+    padding: 10px;
+  }
+  .promo__text button {
+    width: 90%;
+  }
+  .promo__img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+
+  .elect {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .elect__img {
+    width: 90vw;
+  }
+  .elect__text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .elect__text h4 {
+    text-align: center;
+  }
+
+  .articulos, .links {
+    height: auto;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .articulo {
+    margin-bottom: 10px;
+  }
+
+  .links {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .links__mod {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
